@@ -34,6 +34,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RevenueComponent } from './revenue/revenue.component';
 import { EmployeeformComponent } from './employeeform/employeeform.component';
 import { BilldetailontechComponent } from './billdetailontech/billdetailontech.component';
+import { EmpdetailsComponent } from './empdetails/empdetails.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { BilldetailontechComponent } from './billdetailontech/billdetailontech.c
     BillableDetailsComponent,
     RevenueComponent,
     EmployeeformComponent,
-    BilldetailontechComponent
+    BilldetailontechComponent,
+    EmpdetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -35,9 +35,9 @@ export class PakagedetailsComponent implements OnInit {
   }
 
 
-  onChangePage(packageDetail: Array<any>) {
-    this.packageDetail = packageDetail;
-  }
+  // onChangePage(packageDetail: Array<any>) {
+  //   this.packageDetail = packageDetail;
+  // }
 
   ngOnInit() {
     this.items = Array(168).fill(0).map((x, i) => ({ id: (i + 1), name: `${i + 1}` }));

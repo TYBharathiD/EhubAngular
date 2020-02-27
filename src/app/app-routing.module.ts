@@ -15,6 +15,7 @@ import { BillableDetailsComponent } from './billable-details/billable-details.co
 import { RevenueComponent } from './revenue/revenue.component';
 import { EmployeeformComponent } from './employeeform/employeeform.component';
 import { BilldetailontechComponent } from './billdetailontech/billdetailontech.component';
+import { EmpdetailsComponent } from './empdetails/empdetails.component';
 
 const routes: Routes = [
   { path: 'client' , component: ClientFormComponent},
@@ -31,7 +32,9 @@ const routes: Routes = [
   { path : 'billdata' , component : BillableDetailsComponent },
   { path : 'revenue' , component : RevenueComponent },
   { path : 'empform' , component : EmployeeformComponent },
-  { path : 'billdetails' , component : BilldetailontechComponent }
+  { path : 'billdetails' , component : BilldetailontechComponent },
+  { path : 'empdata' , component : EmpdetailsComponent},
+  {path : 'billdata', component : BillableDetailsComponent}
 
 ];
 

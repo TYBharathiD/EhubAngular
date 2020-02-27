@@ -212,7 +212,7 @@ getTechnologyWiseNonBillableEmployeesDetails() {
             events:{
               click: function(e) {
                const stackName = e.point.name
-               this.sendStackName(stackName);
+               this.sendNonbillStackName(stackName);
               }.bind(this)
             }
           }

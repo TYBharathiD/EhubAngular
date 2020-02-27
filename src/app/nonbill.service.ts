@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class NonbillService {
   stackDetails: any = [];
+  empListByTechnology:any=[];
   urlTech: String = 'http://localhost:8080/employee/getByTech';
   constructor(private http: HttpClient,private router:Router) { }
 
@@ -35,9 +36,9 @@ export class NonbillService {
 
   getTechnology(name) {
 
-    return this.http.get(`${this.urlTech}/${name}`).subscribe(billableStackDetails => {
+    return this.http.get(`${this.urlTech}/${name}`).subscribe(res => {
       // debugger
-      this.stackDetails = billableStackDetails['billList'];
+      this.empListByTechnology = res['empList'];
       // console.log("hgggggggg",this.stackDetails);
       this.router.navigateByUrl('/billdetails')
     }, err => {
@@ -46,6 +47,8 @@ export class NonbillService {
       console.log('Employee details with respect to stack got scccessfully')
     });
   }
-  
+  getAllEmps(){
+    return this.http.get('http://localhost:8080/employee/emps')
+  }
 
 }
